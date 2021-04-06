@@ -45,6 +45,11 @@ ctx.moveTo(0, 0);
 ctx.lineTo(200, 100);
 ctx.stroke();
 
+function DrawARectangle {
+  var b_canvas = document.getElementById("b");
+  var b_context = b_canvas.getContext("2d");
+  b_context.fillRect(50, 25, 150, 100);
+}
 function DrawACircle(){	
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -53,11 +58,7 @@ ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
 }
 	
-function DrawARectangle(){
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-b_context.fillRect(50, 25, 150, 100); 
-}
+
 	
 </script>
 	
