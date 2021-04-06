@@ -45,12 +45,13 @@ ctx.moveTo(0, 0);
 ctx.lineTo(200, 100);
 ctx.stroke();
 
-	
+function DrawACircle(){	
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.beginPath();
 ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
+}
 	
 function DrawARectangle(){
 var c = document.getElementById("myCanvas");
@@ -111,6 +112,7 @@ Your browser does not support the HTML canvas tag.
 </canvas>
 
 	<input class="w3-button w3-black" type="button" value="Draw A Rectangle">
+	<input class="w3-button w3-black" type="button" value="Draw A Circle">
 </body>
 </html>
 
