@@ -52,12 +52,15 @@ ctx.beginPath();
 ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
 	
-	var c = document.getElementById("myCanvas");
+function DrawARectangle(){
+var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("Hello World", 10, 50);
-
+b_context.fillRect(50, 25, 150, 100); 
+}
+	
 </script>
+	
+	
 
 
 
@@ -107,7 +110,7 @@ ctx.fillText("Hello World", 10, 50);
 Your browser does not support the HTML canvas tag.
 </canvas>
 
-	<input class="w3-button w3-black" type="button" value="Input Button">
+	<input class="w3-button w3-black" type="button" value="Draw A Rectangle">
 </body>
 </html>
 
