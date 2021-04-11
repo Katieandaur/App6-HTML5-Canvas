@@ -18,10 +18,13 @@ triedel@utexas.edu
  
 Brief Description of Goal of Code:
 to learn how to apply a canvas to a website that allows buttons to create drawings inside the canvas.
-This app will further my knowledge and understanding on the coding process. 
+This app will further my knowledge and understanding on the coding process. I learned how to code for a button that will draw a rectangle,
+circle, my name, an image from the internet on the canvas I made. I also learned how to clear the canvas so you could start over.
  
 Known Issues:
 Having problems connecting my buttons to my functions. 
+Had problems with the image code I was provided.
+i now have no known problems.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -41,13 +44,13 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
 
-
-function DrawARectangleAdd(){
+// code to draw a rectangle within my canvas.
+function DrawARectangleAdd(){ 
   var canvas = document.getElementById('myCanvas');
     var ctx = canvas.getContext('2d');
     ctx.fillRect(25, 25, 101, 100);
 }
-	
+// code to draw a circle within my canvas. the circle wasnt needed in the app assignment. not too sure why i added it but it was easier for me than the rectangle.
 function DrawACircleAdd(){	
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -55,6 +58,7 @@ ctx.beginPath();
 ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
 }
+// code to draw & write my name within my canvas.
 function MyNameAdd() {	
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -63,12 +67,12 @@ ctx.strokeText("Katie", 10, 50);
 
 }
 
-	
+// code to clear everything in my canvas.	
 function clearCanvasAdd() {
 var c_canvas = document.getElementById("myCanvas");
 c_canvas.width = c_canvas.width;
 }
-	
+// code to add an image. this code added my hook em image i found from pinterst.	
  function hookEmAdd() {
   var canvas = document.getElementById("myCanvas");
   var context = canvas.getContext("2d");
@@ -126,20 +130,19 @@ c_canvas.width = c_canvas.width;
 
 </body>
 </html>
-	
+
 
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
 Your browser does not support the HTML canvas tag.
 </canvas>
 
-	
-	<input onclick="DrawARectangleAdd();" class="w3-button w3-black" type="button" value="Draw A Rectangle">
+	<input onclick="DrawARectangleAdd();" class="w3-button w3-black" type="button" value="Draw A Rectangle"> 
 	<input onclick="DrawACircleAdd();" class="w3-button w3-black" type="button" value="Draw A Circle">
 	<input onclick="MyNameAdd();" class="w3-button w3-black" type="button" value="My Name">
 	<input onclick="hookEmAdd();" class="w3-button w3-black" type="button" value="Hook Em">
 	<input onclick="clearCanvasAdd();" class="w3-button w3-black" type="button" value="Clear Canvas">
 	
-	
+	// all the codes above are codes for buttons on the website. 
 	
 </body>
 </html>
