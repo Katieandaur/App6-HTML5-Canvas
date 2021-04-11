@@ -55,9 +55,13 @@ ctx.beginPath();
 ctx.arc(95, 50, 40, 0, 2 * Math.PI);
 ctx.stroke();
 }
-	
-
-	
+function MyName() {	
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Katie", 10, 50);
+</script>
+}
 </script>
 	
 	
@@ -113,6 +117,7 @@ Your browser does not support the HTML canvas tag.
 	
 	<input onclick="DrawARectangleAdd();" class="w3-button w3-black" type="button" value="Draw A Rectangle">
 	<input onclick="DrawACircleAdd();" class="w3-button w3-black" type="button" value="Draw A Circle">
+	<input onclick="MyNameAdd();" class="w3-button w3-black" type="button" value="My Name">
 	
 </body>
 </html>
