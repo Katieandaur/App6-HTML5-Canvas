@@ -72,9 +72,9 @@ c_canvas.width = c_canvas.width;
  function hookEmAdd() {
   var canvas = document.getElementById("e");
   var context = canvas.getContext("2d");
-  var HookEm  = hookEmAdd();
-  cat.src = "https://cdn.shopify.com/s/files/1/0067/2432/1393/products/hook_em_2048x.JPG?v=1571746647";
-  cat.onload = function hookEmAdd() {
+  var hookEm  = hookEmAdd();
+  hookEm.src = "https://cdn.shopify.com/s/files/1/0067/2432/1393/products/hook_em_2048x.JPG?v=1571746647";
+  hookEm.onload = function hookEmAdd() {
     context.drawImage(cat, 0, 0);
   }
   }
