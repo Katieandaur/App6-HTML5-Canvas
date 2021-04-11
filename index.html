@@ -62,6 +62,12 @@ ctx.font = "30px Arial";
 ctx.strokeText("Katie", 10, 50);
 </script>
 }
+	
+function clearCanvas () {
+var c_canvas = document.getElementById("myCanvas");
+c_canvas.width = c_canvas.width;
+	}
+	
 </script>
 	
 	
@@ -118,6 +124,8 @@ Your browser does not support the HTML canvas tag.
 	<input onclick="DrawARectangleAdd();" class="w3-button w3-black" type="button" value="Draw A Rectangle">
 	<input onclick="DrawACircleAdd();" class="w3-button w3-black" type="button" value="Draw A Circle">
 	<input onclick="MyNameAdd();" class="w3-button w3-black" type="button" value="My Name">
+	<input onclick="clearCanvasAdd();" class="w3-button w3-black" type="button" value="Clear Canvas">
+	
 	
 </body>
 </html>
